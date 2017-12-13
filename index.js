@@ -45,3 +45,10 @@ function totalRevenue (drivers){
   }
   return drivers.reduce(addToTotal, 0)
 }
+
+function averageRevenue (drivers){
+  const avgRev = function(agg, el, i, arr){
+    return (agg + el.revenue)/(arr.length - 1)
+  }
+  return drivers.reduce(avgRev, 0)
+}
