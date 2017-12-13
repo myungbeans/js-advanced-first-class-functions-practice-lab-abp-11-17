@@ -42,4 +42,5 @@ function driversByName (drivers){
 function totalRevenue (drivers){
   const addToTotal = function(agg, el, i, arr){
     return agg + el.revenue
+  return drivers.reduce(addToTotal)
 }
