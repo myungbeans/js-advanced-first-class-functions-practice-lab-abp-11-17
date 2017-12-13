@@ -50,5 +50,5 @@ function averageRevenue (drivers){
   const ttlRev = function(agg, el, i, arr){
     return agg + el.revenue
   }
-  return (drivers.reduce(avgRev, 0))/(drivers.length - 1)
+  return (drivers.reduce(avgRev, 0))/(drivers.length)
 }
