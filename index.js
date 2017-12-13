@@ -51,7 +51,7 @@ function averageRevenue (drivers){
     return agg + el.revenue
 
     if (i === arr.length - 1){
-      return agg/arr.length
+      return agg/i
     }
   }
   return drivers.reduce(avgRev, 0)
