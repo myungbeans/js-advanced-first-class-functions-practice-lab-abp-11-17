@@ -38,3 +38,11 @@ function driversByName (drivers){
   const sortedDrivers = drivers.slice()
   return sortedDrivers.sort(nameSorter)
 }
+
+function totalRevenue (drivers){
+  let totalRev = 0
+  const addToTotal = function(element, key, array){
+    let totalRev = element.revenue + totalRev
+  }
+  return drivers.forEach(addToTotal)
+}
