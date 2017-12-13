@@ -27,7 +27,5 @@ function driversByRevenue (drivers){
   const numberSorter = function (num1, num2) {
     return num1 - num2;
   }
-  function callBack(element, index, array){
-    return [].push.element.revenue
-  }
-  return drivers.forEach(callBack)
+  const sortedDrivers = drivers.slice()
+  return sortedDrivers.sort(numberSorter)
