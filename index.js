@@ -22,9 +22,12 @@ function logDriversByHometown (drivers, location){
   return drivers.forEach(callBack)
 }
 
+
 function driversByRevenue (drivers){
   const numberSorter = function (num1, num2) {
     return num1 - num2;
   }
-  return drivers.map(element.sort(numberSorter))
-}
+  function callBack(element, index, array){
+    return [].push.element.revenue
+  }
+  return drivers.forEach(callBack)
