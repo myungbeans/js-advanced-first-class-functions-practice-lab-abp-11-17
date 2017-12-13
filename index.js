@@ -29,3 +29,4 @@ function driversByRevenue (drivers){
   }
   const sortedDrivers = drivers.slice()
   return sortedDrivers.sort(numberSorter)
+}
