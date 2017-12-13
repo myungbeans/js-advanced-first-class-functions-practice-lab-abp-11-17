@@ -40,9 +40,6 @@ function driversByName (drivers){
 }
 
 function totalRevenue (drivers){
-  let totalRev = 0
-  const addToTotal = function(element){
-    let totalRev += element.revenue
-  }
-  return drivers.forEach(addToTotal)
+  const addToTotal = function(agg, el, i, arr){
+    return agg + el.revenue
 }
