@@ -30,3 +30,11 @@ function driversByRevenue (drivers){
   const sortedDrivers = drivers.slice()
   return sortedDrivers.sort(numberSorter)
 }
+
+function driversByName (drivers){
+  const nameSorter = function (a,b){
+    return a.name.localeCompare(b.name)
+  }
+  const sortedDrivers = drivers.slice()
+  return sortedDrivers.sort(nameSorter)
+}
