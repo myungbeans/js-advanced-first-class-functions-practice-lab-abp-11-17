@@ -26,6 +26,5 @@ function driversByRevenue (drivers){
   const numberSorter = function (num1, num2) {
     return num1 - num2;
   }
-  const copy = drivers.slice()
-  return copy.revenue.sort(numberSorter)
+  return drivers.map(element.sort(numberSorter))
 }
